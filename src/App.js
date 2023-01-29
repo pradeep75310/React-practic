@@ -9,6 +9,8 @@ import UncontrolTodo from './uncontrolTodoList/uncontrolTodoListIteam';
 import AppFn from './todoComponent/todoUseList';
 import TodoComponent from './practicTodoList';
 import ButtonDisableTodo from './buttonDisableTodo/buttonDisableTodoComponent';
+import NumberToWord from './numberToWord/numberToWordComponent';
+import ButtonDisableTodos from './buttonDisableTodo/buttonDisablePractic2';
 
 
 
@@ -36,8 +38,10 @@ function App() {
   // }
   return (
     <div className="App">
+      {/* <ButtonDisableTodo/> */}
+      <ButtonDisableTodos/>
     
-    <ButtonDisableTodo/>
+   {/* <NumberToWord></NumberToWord> */}
     </div>
   );
 }
