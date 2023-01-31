@@ -11,6 +11,7 @@ import TodoComponent from './practicTodoList';
 import ButtonDisableTodo from './buttonDisableTodo/buttonDisableTodoComponent';
 import NumberToWord from './numberToWord/numberToWordComponent';
 import ButtonDisableTodos from './buttonDisableTodo/buttonDisablePractic2';
+import ButtonEdit from './buttonDisableTodo/buttonDisableTodoEdit';
 
 
 
@@ -40,6 +41,7 @@ function App() {
     <div className="App">
       {/* <ButtonDisableTodo/> */}
       <ButtonDisableTodos/>
+      <ButtonEdit></ButtonEdit>
     
    {/* <NumberToWord></NumberToWord> */}
     </div>

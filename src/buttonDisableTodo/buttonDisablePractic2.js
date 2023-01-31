@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 
 
 function ButtonDisableTodos() {
-    const [currentVal, changeVal] = useState()
+    const [currentVal, changeVal] = useState([])
     const inputRef = useRef()
     const buttonRef = useRef()
 
@@ -10,7 +10,7 @@ function ButtonDisableTodos() {
         let newText = inputRef.current.value
 
         let todo = {
-            id: Date.now(),
+            id: " " + Date.now(),
             text: newText,
             status: 'active'
         }
@@ -62,7 +62,7 @@ function ButtonDisableTodos() {
     function handleMarkDone(event) {
         let id = event.target.id
         id = id.split('--')[1]
-        const index = currentVal.findIndex((todom => todom.id === todom))
+        const index = currentVal.findIndex((todom => todom.id === id))
         let todon = {...currentVal[index], status: 'done' }
         const newTodo = [...currentVal]
         newTodo[index] = todon
