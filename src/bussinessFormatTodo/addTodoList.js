@@ -9,7 +9,7 @@ function ListItem(props) {
         return (
             <li key={id} id={'li--' + id} className={getClassName(status)}>
                 {editing ? (<input id={'inpt-li--' + id} defaultValue={text} />) : (<span>{text}</span>)}
-                {editing !== true && (<button onClick={handleMarkDone} id={'btn-done' + id} disabled={status === 'done'}>Mark Done</button>)}
+                {editing !== true && (<button onClick={handleMarkDone} id={'btn-done--' + id} disabled={status === 'done'}>Mark Done</button>)}
                 <button onClick={handleEdit} id={'edit-done' + id} disabled={status === 'done'}>{editing ? 'edit done' : 'edit'}</button>
             </li>
         )
@@ -29,6 +29,7 @@ function ListItem(props) {
         let id = event.target.id
         id = id.split('--')[1]
         const index = currentVal.findIndex((todo) => todo.id === id)
+        console.log('id' , id)
         const newTodos = { ...currentVal[index], status: 'done' }
         let todo = [...currentVal]
         todo[index] = newTodos
