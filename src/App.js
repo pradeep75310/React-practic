@@ -13,6 +13,7 @@ import NumberToWord from './numberToWord/numberToWordComponent';
 import ButtonDisableTodos from './buttonDisableTodo/buttonDisablePractic2';
 import ButtonEdit from './buttonDisableTodo/buttonDisableTodoEdit';
 import ContainerTodo from './bussinessFormatTodo/containerTodo';
+import Convertor from './converCelsiusToFehrenheit/celsiusToFahrenheit';
 
 
 
@@ -40,7 +41,7 @@ function App() {
   // }
   return (
     <div className="App">
-      <ContainerTodo/>
+     <Convertor/>
     </div>
   );
 }

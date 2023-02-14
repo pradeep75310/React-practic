@@ -1,7 +1,7 @@
 
 
 function ListItem(props) {
-    const { currentVal, updateVal } = props
+    const { currentVal , markdone} = props
 
     function renderList(item) {
         const { id, text, status, editing } = item
@@ -25,16 +25,19 @@ function ListItem(props) {
             return ''
         }
     }
+
     function handleMarkDone(event) {
-        let id = event.target.id
+        let id = event.target.Value
         id = id.split('--')[1]
         const index = currentVal.findIndex((todo) => todo.id === id)
-        console.log('id' , id)
         const newTodos = { ...currentVal[index], status: 'done' }
         let todo = [...currentVal]
         todo[index] = newTodos
-        updateVal(todo)
+        markdone(todo)
+        
+       
     }
+    
 
     function handleEdit() {
 

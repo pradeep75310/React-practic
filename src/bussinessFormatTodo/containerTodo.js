@@ -3,6 +3,8 @@
 import { useState } from "react"
 import AddTodo from "./addComponentTodo"
 import ListItem from "./addTodoList"
+import ListRender from "./listRender"
+
 
 function ContainerTodo() {
     const [currentVal, updateVal] = useState([
@@ -19,11 +21,16 @@ function ContainerTodo() {
         newTodo.push(item)
         updateVal(newTodo)
     }
+    function markdone(todo) {
+        let cr = todo
+        
+        updateVal(cr)
+    }
 
     return (
         <div>
             <AddTodo addTodo={addTodo} />
-            <ListItem currentVal={currentVal} updateVal={updateVal} />
+            <ListItem currentVal={currentVal} markdone={markdone}/>
         </div>
     )
 }
