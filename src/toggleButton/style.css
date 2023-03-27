@@ -1,0 +1,56 @@
+.mainhedare {
+    background-color: antiquewhite;  
+    display: flex;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 15px;
+    
+}
+
+.logo h4{
+    margin-right: 822px;
+    align-items: center;
+    font-size: 25px;
+    padding: 10px;
+   
+}
+
+
+.navbar{
+    display: flex;
+   align-items: center ;
+    
+}
+.Button-btn{
+    list-style: none;
+    margin: 12px;
+}
+
+.title{
+    margin-right: 555px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: tomato;
+}
+
+.btn{
+    border-radius: 13px;
+    cursor: pointer;
+    font-size: 25px;
+    background-color: brown;
+    color: white;
+    transition: 0.5s;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: tomato;
+}
+.img{
+    width: fit-content;
+    height: 100%;
+    width: 100%;
+}
+.aboutUs{
+   font-size: 45px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

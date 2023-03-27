@@ -1,19 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
-import ButtonComponent from './multiButton';
-import SearchComponent from './searchComponent';
-import AdharListCom from './component/adharIteamList';
-import StyleButton from './component/styleButton';
-import ComponentTodoList from './todoList/componentTodoList';
-import UncontrolTodo from './uncontrolTodoList/uncontrolTodoListIteam';
-import AppFn from './todoComponent/todoUseList';
-import TodoComponent from './practicTodoList';
-import ButtonDisableTodo from './buttonDisableTodo/buttonDisableTodoComponent';
-import NumberToWord from './numberToWord/numberToWordComponent';
-import ButtonDisableTodos from './buttonDisableTodo/buttonDisablePractic2';
-import ButtonEdit from './buttonDisableTodo/buttonDisableTodoEdit';
-import ContainerTodo from './bussinessFormatTodo/containerTodo';
-import Convertor from './converCelsiusToFehrenheit/celsiusToFahrenheit';
+
+import './toggleButton/style.css'
+import Screenmanager from './toggleButton/screenManager';
 
 
 
@@ -41,7 +28,7 @@ function App() {
   // }
   return (
     <div className="App">
-     <Convertor/>
+     <Screenmanager/>
     </div>
   );
 }

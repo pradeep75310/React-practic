@@ -1,0 +1,3 @@
+function TickTck(symbol,Game){
+    
+}
