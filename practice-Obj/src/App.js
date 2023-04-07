@@ -1,7 +1,6 @@
 
 import './toggleButton/style.css'
 import Screenmanager from './toggleButton/screenManager';
-import ProductsUpdate from './practiceOfObject/Object';
 
 
 
@@ -29,7 +28,7 @@ function App() {
   // }
   return (
     <div className="App">
-    <ProductsUpdate/>
+     <Screenmanager/>
     </div>
   );
 }
